@@ -1,0 +1,11 @@
+piVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: busapp-vol-pvc
+spec:
+  resources:
+    requests:
+      storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2
